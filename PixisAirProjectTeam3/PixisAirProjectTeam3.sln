@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixisAirProjectTeam3", "PixisAirProjectTeam3\PixisAirProjectTeam3.csproj", "{84A544B0-338A-4B64-BD69-B890072E6B4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84A544B0-338A-4B64-BD69-B890072E6B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A544B0-338A-4B64-BD69-B890072E6B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84A544B0-338A-4B64-BD69-B890072E6B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84A544B0-338A-4B64-BD69-B890072E6B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DAC16A0-CE4A-42EC-B5FF-C34C9B44D722}
+	EndGlobalSection
+EndGlobal
