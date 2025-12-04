@@ -10,6 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using IBM.Data.DB2.iSeries;
 
+
+//Anjelica Martinez
+//Form uses load button to display all Reshist records in the list box
+//pulled from the iBM i DB2 database
+
 namespace PixisAirProjectTeam3
 {
     public partial class ReshistAM : Form
