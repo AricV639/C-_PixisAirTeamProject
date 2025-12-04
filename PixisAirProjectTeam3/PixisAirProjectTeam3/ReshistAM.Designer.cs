@@ -48,6 +48,7 @@
             this.loadBttn.TabIndex = 1;
             this.loadBttn.Text = "Load";
             this.loadBttn.UseVisualStyleBackColor = true;
+            this.loadBttn.Click += new System.EventHandler(this.loadBttn_Click);
             // 
             // ReshistAM
             // 
