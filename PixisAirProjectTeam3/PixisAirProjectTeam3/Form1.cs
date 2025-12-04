@@ -21,5 +21,15 @@ namespace PixisAirProjectTeam3
         {
             this.Close();
         }
+
+        private void btnCountries_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReshist_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
