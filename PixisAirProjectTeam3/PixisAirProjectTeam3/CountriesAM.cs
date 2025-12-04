@@ -7,14 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IBM.Data.DB2.iSeries;
 
 namespace PixisAirProjectTeam3
 {
     public partial class CountriesAM : Form
     {
+        iDB2Connection conn;
         public CountriesAM()
         {
             InitializeComponent();
+        }
+
+        private void CountriesAM_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadBttn_Click(object sender, EventArgs e)
+        {
+            conn = new iDB2Connection();
+            conn.ConnectionString = "DataSource=DEATHSTAR.GTC.EDU;";
+
+            try { 
+            iDB2Command cmd = new iDB2Command("SELECT * FROM FLIGHT2025.COUNTRY", conn);
+                conn.Open();
+                iDB2DataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                { 
+                
+                    DisplayListBox.Items.Add(reader.GetString(0) + " - " + reader.GetString(1));
+
+                }
+
+            }
+            catch(Exception ex){
+                DisplayListBox.Items.Add(ex.Message);
+            }
+
         }
     }
 }
