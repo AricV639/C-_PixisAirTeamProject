@@ -21,5 +21,11 @@ namespace PixisAirProjectTeam3
         {
             this.Close();
         }
+
+        private void btnReservations_Click(object sender, EventArgs e)
+        {
+            flightCustomers custForm = new flightCustomers();
+            custForm.Show();
+        }
     }
 }
