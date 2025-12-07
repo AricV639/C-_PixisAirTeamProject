@@ -1,13 +1,14 @@
-﻿using System;
+﻿using IBM.Data.DB2.iSeries;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using IBM.Data.DB2.iSeries;
 
 //Anjelica Martinez
 //Form uses load button to display all Country records in the list box
@@ -18,6 +19,8 @@ namespace PixisAirProjectTeam3
     public partial class CountriesAM : Form
     {
         iDB2Connection conn;
+        iDB2DataAdapter adapter;
+        DataSet dataset;
         public CountriesAM()
         {
             InitializeComponent();
@@ -49,6 +52,43 @@ namespace PixisAirProjectTeam3
                 DisplayListBox.Items.Add(ex.Message);
             }
 
+        }
+
+        private void addBttn_Click(object sender, EventArgs e)
+        {
+            string cmdString = "INSERT INTO FLIGHT2025.COUNTRY (CNCD, CNNM) VALUES (@CNCD, @CNNM)";
+
+            try
+            {
+                using (iDB2Connection connection = new iDB2Connection(
+                    "DataSource=DEATHSTAR.GTC.EDU"))
+                {
+                    connection.Open();
+
+                    using (iDB2Command cmd = new iDB2Command(cmdString, connection))
+                    {
+                        cmd.Parameters.Add("CNCD", iDB2DbType.iDB2Char).Value =
+                            txtCountryCode.Text.Trim();
+
+                        cmd.Parameters.Add("CNNM", iDB2DbType.iDB2VarChar).Value =
+                            txtCountryName.Text.Trim();
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+                MessageBox.Show("Record added successfully.",
+                                "Success",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
         }
     }
 }
