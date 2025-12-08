@@ -68,5 +68,21 @@ namespace PixisAirProjectTeam3
             ReshistAM f = new ReshistAM();
             f.ShowDialog();
         }
+
+        private void addCarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (AddCar form = new AddCar())
+            {
+                form.ShowDialog();
+            }
+        }
+
+        private void reservationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (flightCustomers form = new flightCustomers())
+            {
+                form.ShowDialog();
+            }
+        }
     }
 }
