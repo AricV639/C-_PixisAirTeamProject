@@ -50,6 +50,7 @@ namespace PixisAirProjectTeam3
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
         private void btnReservations_Click(object sender, EventArgs e)
         {
             flightCustomers custForm = new flightCustomers();
@@ -60,11 +61,6 @@ namespace PixisAirProjectTeam3
         {
             AddCar custForm = new AddCar();
             custForm.Show();
-        }
-
-        private void btnCountries_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnReshist_Click(object sender, EventArgs e)

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="IBM.Data.DB2.iSeries">
       <HintPath>..\..\..\..\..\Downloads\DB2Crud\DB2Crud\DB2Crud\bin\Debug\IBM.Data.DB2.iSeries.dll</HintPath>
+    </Reference>
     <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\IBM.Data.DB2.iSeries.dll</HintPath>
@@ -63,6 +64,7 @@
     </Compile>
     <Compile Include="Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddCar.cs">
       <SubType>Form</SubType>
     </Compile>
