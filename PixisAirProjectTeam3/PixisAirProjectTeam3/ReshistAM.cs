@@ -34,10 +34,12 @@ namespace PixisAirProjectTeam3
 
             try
             {
-                iDB2Command cmd = new iDB2Command("SELECT * FROM FLIGHT2025.RESHIST", conn);
+                iDB2Command cmd = new iDB2Command("SELECT * FROM FLIGHT2025.RESHIST ORDER BY FLIGHTNO", conn);
                 conn.Open();
                 iDB2DataReader reader = cmd.ExecuteReader();
                 DisplayListBox.Items.Clear(); // Clear previous items
+                 // Adds column names as a header row
+                DisplayListBox.Items.Add("RESNO - CUSTNO - FLIGHTNO - ROUTENO - FLPRICE - TCOST - SEATNO");
 
                 while (reader.Read())
                 {
