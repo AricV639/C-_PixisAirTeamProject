@@ -36,6 +36,7 @@
             this.btnInformation = new System.Windows.Forms.Button();
             this.btnPassword = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnAddCar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCustomers
@@ -120,11 +121,22 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnAddCar
+            // 
+            this.btnAddCar.Location = new System.Drawing.Point(264, 109);
+            this.btnAddCar.Name = "btnAddCar";
+            this.btnAddCar.Size = new System.Drawing.Size(75, 41);
+            this.btnAddCar.TabIndex = 8;
+            this.btnAddCar.Text = "Add Car";
+            this.btnAddCar.UseVisualStyleBackColor = true;
+            this.btnAddCar.Click += new System.EventHandler(this.btnAddCar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.btnAddCar);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPassword);
             this.Controls.Add(this.btnInformation);
@@ -150,6 +162,7 @@
         private System.Windows.Forms.Button btnInformation;
         private System.Windows.Forms.Button btnPassword;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnAddCar;
     }
 }
 
