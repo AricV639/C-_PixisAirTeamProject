@@ -24,8 +24,7 @@ namespace PixisAirProjectTeam3
 
         private void btnCountries_Click(object sender, EventArgs e)
         {
-            CountriesAM f = new CountriesAM();
-            f.ShowDialog();
+            
         }
 
         private void btnReshist_Click(object sender, EventArgs e)
