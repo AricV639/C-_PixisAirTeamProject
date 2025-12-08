@@ -50,6 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCar.Designer.cs">
+      <DependentUpon>AddCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flightCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flightCustomers.Designer.cs">
+      <DependentUpon>flightCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +70,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddCar.resx">
+      <DependentUpon>AddCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flightCustomers.resx">
+      <DependentUpon>flightCustomers.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="ReshistAM.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -22,6 +22,18 @@ namespace PixisAirProjectTeam3
             this.Close();
         }
 
+        private void btnReservations_Click(object sender, EventArgs e)
+        {
+            flightCustomers custForm = new flightCustomers();
+            custForm.Show();
+        }
+
+        private void btnAddCar_Click(object sender, EventArgs e)
+        {
+            AddCar custForm = new AddCar();
+            custForm.Show();
+        }
+
         private void btnCountries_Click(object sender, EventArgs e)
         {
             
