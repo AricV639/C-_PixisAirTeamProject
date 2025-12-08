@@ -84,5 +84,13 @@ namespace PixisAirProjectTeam3
                 form.ShowDialog();
             }
         }
+
+        private void addReshistToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (ReshistAM form = new ReshistAM())
+            {
+                form.ShowDialog();
+            }
+        }
     }
 }

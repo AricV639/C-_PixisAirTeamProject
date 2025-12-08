@@ -45,9 +45,10 @@
             this.reservationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addCarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddCar = new System.Windows.Forms.Button();
-            this.addCarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addReshistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -179,6 +180,8 @@
             // 
             // rESHISTToolStripMenuItem
             // 
+            this.rESHISTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addReshistToolStripMenuItem});
             this.rESHISTToolStripMenuItem.Name = "rESHISTToolStripMenuItem";
             this.rESHISTToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rESHISTToolStripMenuItem.Text = "RESHIST";
@@ -208,6 +211,13 @@
             this.informationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.informationToolStripMenuItem.Text = "Information";
             // 
+            // addCarToolStripMenuItem
+            // 
+            this.addCarToolStripMenuItem.Name = "addCarToolStripMenuItem";
+            this.addCarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addCarToolStripMenuItem.Text = "Add Car";
+            this.addCarToolStripMenuItem.Click += new System.EventHandler(this.addCarToolStripMenuItem_Click);
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
@@ -225,12 +235,12 @@
             this.btnAddCar.UseVisualStyleBackColor = true;
             this.btnAddCar.Click += new System.EventHandler(this.btnAddCar_Click);
             // 
-            // addCarToolStripMenuItem
+            // addReshistToolStripMenuItem
             // 
-            this.addCarToolStripMenuItem.Name = "addCarToolStripMenuItem";
-            this.addCarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addCarToolStripMenuItem.Text = "Add Car";
-            this.addCarToolStripMenuItem.Click += new System.EventHandler(this.addCarToolStripMenuItem_Click);
+            this.addReshistToolStripMenuItem.Name = "addReshistToolStripMenuItem";
+            this.addReshistToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addReshistToolStripMenuItem.Text = "addReshist";
+            this.addReshistToolStripMenuItem.Click += new System.EventHandler(this.addReshistToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -280,6 +290,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button btnAddCar;
         private System.Windows.Forms.ToolStripMenuItem addCarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addReshistToolStripMenuItem;
     }
 }
 
