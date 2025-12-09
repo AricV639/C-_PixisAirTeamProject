@@ -68,5 +68,10 @@ namespace PixisAirProjectTeam3
             ReshistAM f = new ReshistAM();
             f.ShowDialog();
         }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

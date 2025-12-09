@@ -32,15 +32,16 @@ namespace PixisAirProjectTeam3
                 connection.Open();
 
                 iDB2Command cmd = new iDB2Command(cmdString, connection);
-                cmd.Parameters["@CNCD"].Value = "BZ";
-                cmd.Parameters["@CNNM"].Value = "New Zealand2";
+                cmd.DeriveParameters();
+                cmd.Parameters["@CNCD"].Value = "TQ";
+                cmd.Parameters["@CNNM"].Value = "Transelvania";
                 cmd.ExecuteNonQuery();
                 connection.Close();
 
                 label1.Text = "Database Updated!";
 
             }
-            catch(Exception ex) { label1.Text = ex.Message; }
+            catch (Exception ex) { label1.Text = ex.Message; }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
